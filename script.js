@@ -1,0 +1,1 @@
+const b=document.getElementById("lang");let language="es";b.addEventListener("click",()=>{language=language==="es"?"en":"es";document.documentElement.lang=language;b.textContent=language==="es"?"EN":"ES";document.querySelectorAll("[data-es][data-en]").forEach(el=>el.innerHTML=el.dataset[language])});document.getElementById("year").textContent=new Date().getFullYear();
